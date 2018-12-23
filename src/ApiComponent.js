@@ -6,7 +6,8 @@ class ApiComponent extends Component{
     constructor(){
         super();
         this.state ={
-            person: ''
+            person: 'person',
+            homeworld:''
         }
     }
 
@@ -14,16 +15,27 @@ class ApiComponent extends Component{
         fetch(baseAPI + 'people/'+number+'/')
         .then(Response => Response.json())
         .then(data => this.setState({person: data}))
+        .then(() => this.HomeWorldAPI())
+        
+    }
+
+    HomeWorldAPI(){
+        console.log(this.state.person.homeworld)
+        fetch(this.state.person.homeworld)
+        .then(Response => Response.json())
+        .then(data => this.setState({homeworld: data}))
     }
      
     componentDidMount(){
-        this.PeopleAPI(1)
+        this.PeopleAPI(1)       
+        
     }
-
-
     render(){
         return(
-            <PersonCard character = {this.state.person}/>
+            <PersonCard 
+            character = {this.state.person}
+            homeworld = {this.state.homeworld}
+            />
         )
     }
 }
