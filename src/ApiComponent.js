@@ -1,4 +1,5 @@
 import React,{Component} from 'react'
+import PersonCard from './PersonCard';
 
 class ApiComponent extends Component{
 
@@ -16,9 +17,8 @@ class ApiComponent extends Component{
 
 
     render(){
-        let character = this.state.person
         return(
-            <h1>{character.name}</h1>
+            <PersonCard character = {this.state.person}/>
         )
     }
 }
