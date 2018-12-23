@@ -1,6 +1,6 @@
 import React,{Component} from 'react'
 import PersonCard from './PersonCard';
-
+const baseAPI ='https://swapi.co/api/';
 class ApiComponent extends Component{
 
     constructor(){
@@ -9,10 +9,15 @@ class ApiComponent extends Component{
             person: ''
         }
     }
-    componentDidMount(){
-        fetch('https://swapi.co/api/people/1/')
+
+    PeopleAPI(number){
+        fetch(baseAPI + 'people/'+number+'/')
         .then(Response => Response.json())
         .then(data => this.setState({person: data}))
+    }
+     
+    componentDidMount(){
+        this.PeopleAPI(1)
     }
 
 
