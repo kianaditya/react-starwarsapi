@@ -1,10 +1,12 @@
 import React from "react"
 import ReactDOM from "react-dom"
+import Header from './Header'
 
-const HelloWorld = () => {
-    return <h2>Hello World</h2>
-    
+const App = () => {
+    return (
+        <Header />
+    )
 };
 
 
-ReactDOM.render(<HelloWorld />, document.getElementById("root"))
+ReactDOM.render(<App />, document.getElementById("root"))
