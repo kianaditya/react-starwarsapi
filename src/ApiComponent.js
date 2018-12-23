@@ -4,10 +4,21 @@ class ApiComponent extends Component{
 
     constructor(){
         super();
+        this.state ={
+            person: ''
+        }
     }
+    componentDidMount(){
+        fetch('https://swapi.co/api/people/1/')
+        .then(Response => Response.json())
+        .then(data => this.setState({person: data}))
+    }
+
+
     render(){
+        let character = this.state.person
         return(
-            <h1>ApiComponent</h1>
+            <h1>{character.name}</h1>
         )
     }
 }
