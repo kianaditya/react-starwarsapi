@@ -8,10 +8,13 @@ class ApiComponent extends Component{
         this.state ={
             person: 'person',
             homeworld:''
-        }
+        };
+        this.PeopleAPI = this.PeopleAPI.bind(this);
+        this.HomeWorldAPI = this.HomeWorldAPI.bind(this);
     }
 
-    PeopleAPI(number){
+    PeopleAPI(){
+        let number = Math.floor(Math.random() *90)+1
         fetch(baseAPI + 'people/'+number+'/')
         .then(Response => Response.json())
         .then(data => this.setState({person: data}))
@@ -20,21 +23,17 @@ class ApiComponent extends Component{
     }
 
     HomeWorldAPI(){
-        console.log(this.state.person.homeworld)
         fetch(this.state.person.homeworld)
         .then(Response => Response.json())
         .then(data => this.setState({homeworld: data}))
     }
      
-    componentDidMount(){
-        this.PeopleAPI(1)       
-        
-    }
     render(){
         return(
             <PersonCard 
             character = {this.state.person}
             homeworld = {this.state.homeworld}
+            PeopleAPI = {this.PeopleAPI}
             />
         )
     }
