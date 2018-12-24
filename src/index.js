@@ -1,17 +1,17 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import Header from './Header'
-import ApiComponent from "./ApiComponent";
+import App from './App'
 
-const App = () => {
+const Index = () => {
     return (
         <div>
             <Header />
-            <ApiComponent />
+            <App />
         </div>
         
     )
 };
 
 
-ReactDOM.render(<App />, document.getElementById("root"))
+ReactDOM.render(<Index />, document.getElementById("root"))

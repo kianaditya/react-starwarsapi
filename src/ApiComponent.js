@@ -3,18 +3,19 @@ import PersonCard from './PersonCard';
 const baseAPI ='https://swapi.co/api/';
 class ApiComponent extends Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state ={
-            person: 'person',
-            homeworld:''
+            person: '',
+            homeworld:'',
+            id: props.id
         };
         this.PeopleAPI = this.PeopleAPI.bind(this);
         this.HomeWorldAPI = this.HomeWorldAPI.bind(this);
     }
 
     PeopleAPI(){
-        let number = Math.floor(Math.random() *90)+1
+        let number = Math.floor(Math.random() *70)+1
         fetch(baseAPI + 'people/'+number+'/')
         .then(Response => Response.json())
         .then(data => this.setState({person: data}))
@@ -26,15 +27,21 @@ class ApiComponent extends Component{
         fetch(this.state.person.homeworld)
         .then(Response => Response.json())
         .then(data => this.setState({homeworld: data}))
+        .then(data => this.props.HWCheck(this.state.homeworld.name,this.state.id))
     }
+    
      
     render(){
         return(
-            <PersonCard 
-            character = {this.state.person}
-            homeworld = {this.state.homeworld}
-            PeopleAPI = {this.PeopleAPI}
-            />
+            <div id = {this.state.id}>
+                <PersonCard 
+                character = {this.state.person}
+                homeworld = {this.state.homeworld}
+                PeopleAPI = {this.PeopleAPI}
+                id = {this.state.id}
+                />
+            </div>
+            
         )
     }
 }
