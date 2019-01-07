@@ -4,15 +4,15 @@ self.__precacheManifest = [
     "url": "/react-starwarsapi/static/js/runtime~main.eff9669e.js"
   },
   {
-    "revision": "05c3d60eec66ca2c9991",
-    "url": "/react-starwarsapi/static/js/main.05c3d60e.chunk.js"
+    "revision": "512fa4d0b8e8031daa9c",
+    "url": "/react-starwarsapi/static/js/main.512fa4d0.chunk.js"
   },
   {
     "revision": "fbfa9ac1c04d6f818c50",
     "url": "/react-starwarsapi/static/js/1.fbfa9ac1.chunk.js"
   },
   {
-    "revision": "fecac23a6aa6dfe639192445a97c5695",
+    "revision": "031918476173713e175abf155dabf61b",
     "url": "/react-starwarsapi/index.html"
   }
 ];
