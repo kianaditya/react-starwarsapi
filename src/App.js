@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   HomeWorldCheck(HWName, id) {
-    id == 1
+    id === 1
       ? this.setState({
           HomeWorld1: HWName
         })
@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   HomeWorldCompare() {
-    this.state.HomeWorld1 == this.state.HomeWorld2
+    this.state.HomeWorld1 === this.state.HomeWorld2
       ? this.setState({
           CompareHomeWorld: "They are from Same Home World!"
         })
@@ -43,8 +43,17 @@ class App extends Component {
           <ApiComponent id="2" HWCheck={this.HomeWorldCheck} />
         </div>
 
-        <p style = {comparisonStyle}>
-          <h2 style={{ color: this.state.CompareHomeWorld === "They are from Same Home World!" ? "green" : "brown" }}>{this.state.CompareHomeWorld}</h2>
+        <p style={comparisonStyle}>
+          <h2
+            style={{
+              color:
+                this.state.CompareHomeWorld === "They are from Same Home World!"
+                  ? "green"
+                  : "brown"
+            }}
+          >
+            {this.state.CompareHomeWorld}
+          </h2>
         </p>
       </div>
     );
@@ -56,6 +65,6 @@ const appStyle = {
   justifyContent: "center"
 };
 const comparisonStyle = {
-  textAlign: "center",
+  textAlign: "center"
 };
 export default App;
