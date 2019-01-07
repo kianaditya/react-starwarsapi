@@ -1,11 +1,11 @@
 {
-  "main.js": "/react-starwarsapi/static/js/main.05c3d60e.chunk.js",
-  "main.js.map": "/react-starwarsapi/static/js/main.05c3d60e.chunk.js.map",
+  "main.js": "/react-starwarsapi/static/js/main.512fa4d0.chunk.js",
+  "main.js.map": "/react-starwarsapi/static/js/main.512fa4d0.chunk.js.map",
   "static/js/1.fbfa9ac1.chunk.js": "/react-starwarsapi/static/js/1.fbfa9ac1.chunk.js",
   "static/js/1.fbfa9ac1.chunk.js.map": "/react-starwarsapi/static/js/1.fbfa9ac1.chunk.js.map",
   "runtime~main.js": "/react-starwarsapi/static/js/runtime~main.eff9669e.js",
   "runtime~main.js.map": "/react-starwarsapi/static/js/runtime~main.eff9669e.js.map",
   "index.html": "/react-starwarsapi/index.html",
-  "precache-manifest.2915f43f37b21ff12ecf7e0a067c0f39.js": "/react-starwarsapi/precache-manifest.2915f43f37b21ff12ecf7e0a067c0f39.js",
+  "precache-manifest.c372f7a3c4312c6ae391b94212d98eaf.js": "/react-starwarsapi/precache-manifest.c372f7a3c4312c6ae391b94212d98eaf.js",
   "service-worker.js": "/react-starwarsapi/service-worker.js"
 }
