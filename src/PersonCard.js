@@ -20,6 +20,8 @@ class PersonCard extends Component{
 
 const personCardStyle = {
     textAlign: "center",
+    margin: "20px",
+    padding: "10px",
 }
 
 export default PersonCard
