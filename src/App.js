@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   HomeWorldCheck(HWName, id) {
-    id === 1
+    id == 1
       ? this.setState({
           HomeWorld1: HWName
         })
@@ -26,7 +26,7 @@ class App extends Component {
   }
 
   HomeWorldCompare() {
-    this.state.HomeWorld1 === this.state.HomeWorld2
+    this.state.HomeWorld1 == this.state.HomeWorld2
       ? this.setState({
           CompareHomeWorld: "They are from Same Home World!"
         })
