@@ -2,18 +2,14 @@ import React, { Component } from "react";
 import ApiComponent from "./ApiComponent";
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
+  state = {
       HomeWorld1: "",
       HomeWorld2: "",
       CompareHomeWorld: ""
     };
-    this.HomeWorldCheck = this.HomeWorldCheck.bind(this);
-  }
 
-  HomeWorldCheck(HWName, id) {
-    id == 1
+  HomeWorldCheck = (HWName, id) => {
+    id ==- 1
       ? this.setState({
           HomeWorld1: HWName
         })
@@ -25,8 +21,8 @@ class App extends Component {
     }
   }
 
-  HomeWorldCompare() {
-    this.state.HomeWorld1 == this.state.HomeWorld2
+  HomeWorldCompare = () => {
+    this.state.HomeWorld1 ==- this.state.HomeWorld2
       ? this.setState({
           CompareHomeWorld: "They are from Same Home World!"
         })

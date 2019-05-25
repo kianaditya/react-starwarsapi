@@ -1,9 +1,11 @@
-import React, { Component } from "react";
+import React from 'react'
 
-class Header extends Component {
-  render() {
-    return <h1 style={headerStyle}>Star Wars API</h1>;
-  }
+const Header = () => {
+    return (
+        <div>
+            <h1 style = {headerStyle} >Star Wars API</h1>
+        </div>
+    )
 }
 
 const headerStyle = {
@@ -14,4 +16,4 @@ const headerStyle = {
   borderBottom: "1px dotted darkgray"
 };
 
-export default Header;
+export default Header
