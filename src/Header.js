@@ -1,15 +1,11 @@
-import React,{Component} from "react"
-import ReactDOM from "react-dom"
+import React from 'react'
 
-class Header extends Component{
-    constructor(){
-        super()   
-    }
-    render(){
-        return(
+const Header = () => {
+    return (
+        <div>
             <h1 style = {headerStyle} >Star Wars API</h1>
-        )
-    }
+        </div>
+    )
 }
 
 const headerStyle = {

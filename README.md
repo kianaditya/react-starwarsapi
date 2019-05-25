@@ -14,4 +14,3 @@ This project is deployed at [GitHub pages](https://kianaditya.github.io/react-st
 * Clone this repo to local folder
 * `npm install` to install dependencies 
 * `npm start` to start development server, visit [Localhost:3000](localhost:3000) to check out the rendered page
-
