@@ -9,11 +9,11 @@ const Header = () => {
 }
 
 const headerStyle = {
-    textAlign: "center",
-    padding: "10px",
-    paddingBottom: "20px",
-    textDecoration: "underline",
-    borderBottom: "1px dotted darkgray",
-}
+  textAlign: "center",
+  padding: "10px",
+  paddingBottom: "20px",
+  textDecoration: "underline",
+  borderBottom: "1px dotted darkgray"
+};
 
 export default Header

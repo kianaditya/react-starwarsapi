@@ -13,9 +13,9 @@ const PersonCard = props => {
 }
 
 const personCardStyle = {
-    textAlign: "center",
-    margin: "20px",
-    padding: "10px",
-}
+  textAlign: "center",
+  margin: "20px",
+  padding: "10px"
+};
 
 export default PersonCard
