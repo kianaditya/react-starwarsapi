@@ -19,7 +19,7 @@
     "react-dom": "^16.12.0",
     "gh-pages": "^2.2.0",
     "react": "^16.12.0",
-    "react-scripts": "^2.1.2"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.5.0",
@@ -30,7 +30,7 @@
     "css-loader": "^3.0.0",
     "style-loader": "^0.23.0",
     "webpack": "^4.19.1",
-    "webpack-cli": "^3.3.6"
+    "webpack-cli": "^3.3.12"
   },
   "browserslist": [
     ">0.2%",
